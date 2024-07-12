@@ -980,11 +980,11 @@ if (typeof Object.create !== "function") {
                 }
 
                 minSwipe = function () {
-                    return base.newRelativeX / 5;
+                    return base.newRelativeX / 4;
                 };
 
                 maxSwipe = function () {
-                    return base.maximumPixels + base.newRelativeX / 5;
+                    return base.maximumPixels + base.newRelativeX / 4;
                 };
 
                 base.newPosX = Math.max(Math.min(base.newPosX, minSwipe()), maxSwipe());
@@ -1451,7 +1451,7 @@ if (typeof Object.create !== "function") {
 
     $.fn.owlCarousel.options = {
 
-        items : 5,
+        items : 4,
         itemsCustom : false,
         itemsDesktop : [1199, 4],
         itemsDesktopSmall : [979, 3],
